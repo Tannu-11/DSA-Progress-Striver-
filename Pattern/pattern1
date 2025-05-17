@@ -1,1 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
 
+// Function to print a square pattern of stars of size n x n
+void pattern1(int n)
+{
+    // Loop over each row
+    for(int i = 0; i < n; i++)
+    {
+        // Loop over each column in the current row
+        for(int j = 0; j < n; j++)
+        {
+            cout << "* ";  // Print star followed by space
+        }
+        cout << endl;  // Move to next line after each row is printed
+    }
+}
+
+int main()
+{
+    int n;
+    cin >> n;  // Read the size of the pattern from user input
+    
+    pattern1(n);  // Call function to print the star pattern
+    
+    return 0;  // Indicate successful program termination
+}
